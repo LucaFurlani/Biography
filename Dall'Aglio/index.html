@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia di Hayao Miyazaki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .bio, .curiosities, .works {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #eee;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 20%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Biografia di Hayao Miyazaki</h1>
+    </header>
+    <div class="container">
+        <section class="bio">
+            <h2>Biografia</h2>
+            <img src="Hayao_Miyazaki_cropped_1_Hayao_Miyazaki_201211.jpg" alt="Hayao Miyazaki">
+            <p>Hayao Miyazaki è nato il 5 gennaio 1941 a Tokyo, Giappone. È un regista, sceneggiatore, animatore e produttore cinematografico giapponese. Ha co-fondato lo Studio Ghibli nel 1985 e ha diretto numerosi film d'animazione di successo.</p>
+        </section>
+        <section class="curiosities">
+            <h2>Curiosità</h2>
+            <ul>
+                <li>Ha vinto l'Oscar per il miglior film d'animazione con "La città incantata".</li>
+                <li>È noto per il suo amore per la natura e spesso include temi ecologici nei suoi film.</li>
+                <li>Ha annunciato il suo ritiro più volte, ma è sempre tornato a lavorare su nuovi progetti.</li>
+            </ul>
+        </section>
+        <section class="works">
+            <h2>Opere Principali</h2>
+            <ul>
+                <li>Il castello errante di Howl</li>
+                <li>La città incantata</li>
+                <li>Principessa Mononoke</li>
+                <li>Il mio vicino Totoro</li>
+                <li>Ponyo sulla scogliera</li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const curiosities = document.querySelector('.curiosities ul');
+            const newCuriosity = document.createElement('li');
+            newCuriosity.textContent = 'Miyazaki ha una passione per gli aerei e il volo, che spesso appaiono nei suoi film.';
+            curiosities.appendChild(newCuriosity);
+        });
+    </script>
+</body>
+</html>
