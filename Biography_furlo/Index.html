@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dante Alighieri</title>
+  <!-- Link al CDN di Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Aggiungiamo stili personalizzati -->
+  <style>
+    body {
+      background-color: #f5f3f1;
+      font-family: 'Arial', sans-serif;
+    }
+    header {
+      background: linear-gradient(135deg, #8B0000, #3E2723);
+      color: white;
+      padding: 80px 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      border-radius: 0 0 20px 20px;
+    }
+    header h1 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    header p {
+      font-size: 1.6rem;
+      margin-top: 20px;
+    }
+    .section-title {
+      color: #8B0000;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .img-fluid {
+      border-radius: 15px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .img-fluid:hover {
+      transform: scale(1.1);
+    }
+    footer {
+      background-color: #3E2723;
+      color: white;
+      padding: 20px 0;
+      border-radius: 20px 20px 0 0;
+    }
+    footer p {
+      font-size: 1rem;
+    }
+    .btn-custom {
+      background-color: #8B0000;
+      color: white;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      padding: 10px 25px;
+      text-transform: uppercase;
+      transition: background-color 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: #3E2723;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Intestazione del sito -->
+  <header class="text-center">
+    <h1>Dante Alighieri</h1>
+    <p>Il Sommo Poeta e la sua eredità immortale</p>
+    <a href="#about" class="btn btn-custom">Scopri di più</a>
+  </header>
+
+  <!-- Sezione principale -->
+  <div class="container mt-5" id="about">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="section-title">Chi era Dante?</h2>
+        <p>Dante Alighieri è stato uno dei più grandi poeti della letteratura mondiale, nato a Firenze nel 1265. La sua opera principale, "La Divina Commedia", è un poema epico che esplora l'aldilà attraverso i regni di Inferno, Purgatorio e Paradiso, utilizzando la lingua volgare per la prima volta nella storia della letteratura italiana.</p>
+        <p>Oltre alla Divina Commedia, Dante ha scritto numerosi trattati politici e filosofici che lo hanno reso una figura centrale nel pensiero medievale e rinascimentale. La sua influenza è ancora presente nella cultura moderna, e la sua figura continua a essere oggetto di studi e ricerche in tutto il mondo.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="DANTEi.jpg"  class="img-fluid" alt="Immagine di Dante Alighieri">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sezione delle citazioni -->
+  <div class="container text-center mt-5">
+    <h2 class="section-title">Citazioni Celebri</h2>
+    <blockquote class="blockquote">
+      <p class="mb-0">"La divina commedia è un viaggio di redenzione e salvezza." </p>
+      <footer class="blockquote-footer">Dante Alighieri</footer>
+    </blockquote>
+    <blockquote class="blockquote">
+      <p class="mb-0">"Nel mezzo del cammin di nostra vita mi ritrovai per una selva oscura, ché la diritta via era smarrita."</p>
+      <footer class="blockquote-footer">Dante Alighieri, La Divina Commedia</footer>
+    </blockquote>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2025 Dante Alighieri - Tutti i diritti riservati.</p>
+  </footer>
+
+  <!-- Script Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
